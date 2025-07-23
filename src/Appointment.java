@@ -1,4 +1,4 @@
-// Class representing an appointment, implements the Bookable interface
+// Class representing an appointment, implements the Bookings interface
 public class Appointment implements Bookings {
     private String patientName;
     private String patientPhone;
@@ -31,13 +31,13 @@ public class Appointment implements Bookings {
                 + "------------------------------";
     }
 
-    // Implementation of confirmBooking from Bookable
+    // Implementation of confirmBooking from Bookings
     @Override
     public void confirmBooking() {
         System.out.println("Booking confirmed for " + patientName + " at " + timeSlot);
     }
 
-    // Implementation of cancelBooking from Bookable
+    // Implementation of cancelBooking from Bookings
     @Override
     public void cancelBooking() {
         System.out.println("Booking for " + patientName + " has been cancelled.");

@@ -1,24 +1,24 @@
-public abstract class Healthprofessional {
-    // null con
+// Base class representing a generic health professional
+public class Healthprofessional {
     protected int id;
     protected String name;
-    protected String department; // Additional basic info
+    protected String department;
 
+    // Default constructor
     public Healthprofessional() {}
 
+    // Constructor to initialize all variables
     public Healthprofessional(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
     }
-// need to convert this method into toString
-@Override
-public String toString() {
-    return "ID: " + id + "\n"
-            + "Name: " + name + "\n"
-            + "Department: " + department;
+
+    // toString method to display health professional details
+    @Override
+    public String toString() {
+        return "ID: " + id + "\n"
+                + "Name: " + name + "\n"
+                + "Department: " + department;
+    }
 }
-
-}
-
-
